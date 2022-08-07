@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        @media screen and (min-width: 1000px) {
+            .list {
+                display: flex;
+                flex-direction: row-reverse;
+                list-style-type: none;
+                position: fixed;
+            }
+
+            .list li {
+                margin-right: 4vw;
+                font-size: 1.4vw;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                cursor: pointer;
+                color: rgb(0, 132, 255);
+                list-style: none;
+
+            }
+
+            .name {
+                margin-left: 26vw !important;
+            }
+
+            #name {
+                margin: 0.5vw !important;
+
+                cursor: default;
+
+            }
+
+            .first_name {
+                font-size: 3.7vw !important;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+                color: rgb(0, 153, 255);
+            }
+
+            .container {
+                background-image: url("comp.jpg");
+                width: 100vw;
+                height: 700px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+            }
+
+            .content {
+
+                height: 220px;
+                width: 400px;
+
+                padding-top: 200px;
+
+
+                margin-left: 160px;
+
+            }
+
+            .hello {
+                color: red;
+                font-size: 35px;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-weight: bolder;
+
+            }
+
+            .name1 {
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .skill1 {
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.562);
+                padding: 2px !important;
+
+            }
+
+            .button {
+                margin-top: 70px !important;
+                border-bottom-left-radius: 30px;
+                height: 30px;
+                width: 130px;
+                border-top-right-radius: 30px;
+                background-color: rgb(86, 247, 247);
+                border-color: blue;
+                font-size: 18px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(0, 47, 255);
+                padding: 4px;
+                cursor: pointer;
+
+            }
+
+            .about_us {
+                background-image: url("image3 .jpg");
+
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: -5vh !important;
+                padding: 0px;
+                width: 100% !important;
+                height: 670px;
+
+            }
+
+            .myskill {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 637px;
+
+
+                background-image: url("image.jpg");
+
+
+            }
+
+            #head {
+                display: none;
+            }
+
+            .boxa {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20vh;
+                margin-left: 4vw;
+
+
+            }
+
+
+            .boxA {
+                border-radius: 5px;
+                height: 350px;
+                width: 290px;
+                background-color: white;
+            }
+
+            .boxB {
+                border-radius: 5px;
+                height: 350px;
+                width: 290px;
+                margin-left: 50px;
+                background-color: white;
+            }
+
+            .boxC {
+                border-radius: 5px;
+                height: 350px;
+                width: 290px;
+                margin-left: 45px !important;
+                background-color: white;
+            }
+
+            .pro {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 25px;
+                color: rgb(255, 0, 85);
+                font-weight: bold;
+            }
+
+            .con1 {
+                margin-left: 30px;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .con2 {
+                margin-left: 30px;
+                font-size: 15px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .con3 {
+                margin-left: 30px;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .projecta {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 637px;
+
+
+                background-image: url("vector-vintage-white-frame-backg.jpg");
+            }
+
+            .pro2 {
+                border: 2px solid black;
+                height: 385px;
+                width: 680px;
+                margin-top: 180px;
+                margin-left: 310px;
+            }
+
+            .heada {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(233, 43, 43);
+            }
+
+            .lista {
+                padding: 15px;
+            }
+
+            .a {
+                padding: 3px;
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                border: 1px solid rgb(200, 245, 230);
+                ;
+                margin: 6px;
+                background-color: rgb(200, 245, 230);
+                border-radius: 15px;
+
+            }
+
+            .contacta {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 637px;
+
+
+                background-image: url("photo-1518655048521-f130df041f66.jpg");
+            }
+
+            .form {
+                border: 4px solid rgba(192, 177, 177, 0.76);
+                height: 450px;
+                width: 500px;
+                margin-top: 0px;
+                margin-left: 300px;
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+                background-color: rgb(212, 228, 241);
+            }
+
+            .con {
+                margin-top: 50px;
+                margin-left: 400px;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            .feed {
+                color: Red;
+            }
+
+            .mess {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .namea {
+                margin-left: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            .fo {
+                margin-top: 25px;
+            }
+
+            .in {
+                width: 390px;
+                color: rgb(158, 4, 4);
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .messa {
+                font-style: oblique;
+                font-weight: bold;
+                color: rgb(8, 121, 8);
+            }
+
+            .sub {
+                width: 390px;
+                margin-left: 40px;
+                padding: 5px;
+                background-color: rgb(71, 242, 248);
+                font-weight: bold;
+                border-radius: 20px;
+                cursor: pointer;
+                border-color: blue;
+            }
+
+            .log {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(231, 228, 228);
+
+            }
+
+            .copy {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(63, 57, 57);
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding-top: 10px;
+            }
+        }
+
+
+
+
+        @media screen and (min-width:1200px) {
+            .intro {
+                /*  border: 2px solid red;*/
+                height: 60vh;
+                width: 43vw;
+                padding-top: 24vh;
+                margin-left: 29vw;
+            }
+
+            .heading {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: red;
+                margin-top: 0vh;
+            }
+
+            .content2 {
+                padding: 0.7rem;
+                font-size: 1.4vw;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .resume {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                margin-left: 10px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+
+            }
+
+            .cv {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+            }
+
+        }
+
+        @media screen and (max-width:1200px) and (min-width:1000px) {
+            .intro {
+                /*  border: 2px solid red;*/
+                height: 60vh;
+                width: 43vw;
+                padding-top: 25vh;
+                margin-left: 38vw;
+            }
+
+            .heading {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: red;
+                margin-top: 0vh;
+            }
+
+            .content2 {
+                padding: 0.7rem;
+                font-size: 1.6vw;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .resume {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                margin-left: 10px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+
+            }
+
+            .cv {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+            }
+
+        }
+
+        @media screen and (max-width:1000px) and (min-width:700px) {
+            .intro {
+                /*  border: 2px solid red;*/
+                height: 60vh;
+                width: 43vw;
+                padding-top: 24vh;
+                margin-left: 30vw;
+            }
+
+            .heading {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: red;
+                margin-top: 0vh;
+            }
+
+            .content2 {
+                padding: 0.7rem;
+                font-size: 2.0vw;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .resume {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                margin-left: 10px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+
+            }
+
+            .cv {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+            }
+
+        }
+
+
+        @media screen and (max-width:1000px) and (min-width: 700px) {
+            .list {
+                display: flex;
+                flex-direction: row-reverse;
+                list-style-type: none;
+                position: fixed;
+            }
+
+            .list li {
+                margin-right: 4vw;
+                font-size: 1.4vw;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                cursor: pointer;
+                color: rgb(0, 132, 255);
+                list-style: none;
+
+            }
+
+            .name {
+                margin-left: 26vw !important;
+            }
+
+            #name {
+                margin: 0.5vw !important;
+
+                cursor: default;
+
+            }
+
+            .first_name {
+                font-size: 3.7vw !important;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+                color: rgb(0, 153, 255);
+            }
+
+            .container {
+                background-image: url("comp.jpg");
+                width: 100vw;
+                height: 700px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+            }
+
+            .content {
+
+                height: 220px;
+                width: 400px;
+
+                padding-top: 200px;
+
+
+                margin-left: 160px;
+
+            }
+
+            .hello {
+                color: red;
+                font-size: 35px;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-weight: bolder;
+
+            }
+
+            .name1 {
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .skill1 {
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.562);
+                padding: 2px !important;
+
+            }
+
+            .button {
+                margin-top: 70px !important;
+                border-bottom-left-radius: 30px;
+                height: 30px;
+                width: 130px;
+                border-top-right-radius: 30px;
+                background-color: rgb(86, 247, 247);
+                border-color: blue;
+                font-size: 18px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(0, 47, 255);
+                padding: 4px;
+                cursor: pointer;
+
+            }
+
+            .about_us {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 70vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+                background-image: url("vector-vintage-white-frame-background-long-shadows-blank-square-paper-baroque-pattern-retro-decorations-38650068.jpg");
+            }
+
+            .myskill {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 637px;
+
+
+                background-image: url("image.jpg");
+
+
+            }
+
+            #head {
+                display: none;
+            }
+
+            .boxa {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20vh;
+                margin-left: 4vw;
+
+
+            }
+
+
+            .boxA {
+                border-radius: 5px;
+                height: 350px;
+                width: 290px;
+                background-color: white;
+            }
+
+            .boxB {
+                border-radius: 5px;
+                height: 350px;
+                width: 290px;
+                margin-left: 50px;
+                background-color: white;
+            }
+
+            .boxC {
+                border-radius: 5px;
+                height: 350px;
+                width: 290px;
+                margin-left: 45px !important;
+                background-color: white;
+            }
+
+            .pro {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 25px;
+                color: rgb(255, 0, 85);
+                font-weight: bold;
+            }
+
+            .con1 {
+                margin-left: 30px;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .con2 {
+                margin-left: 30px;
+                font-size: 15px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .con3 {
+                margin-left: 30px;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .projecta {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 70vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+                background-image: url("vector-vintage-white-frame-background-long-shadows-blank-square-paper-baroque-pattern-retro-decorations-38650068.jpg");
+            }
+
+            .pro2 {
+
+                height: 30vh;
+                width: 55vw;
+                margin-top: 24vh;
+                margin-left: 20vw;
+            }
+
+            .heada {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 2rem;
+                font-weight: bold;
+                color: rgb(233, 43, 43);
+            }
+
+            .lista {
+                padding: 15px;
+            }
+
+            .a {
+                padding: 3px;
+                font-size: 1rem;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                border: 1px solid rgb(200, 245, 230);
+                ;
+                margin: 6px;
+                background-color: rgb(200, 245, 230);
+                border-radius: 15px;
+
+            }
+
+            .contacta {
+                border: 2px solid rgb(219, 200, 200);
+                width: 100% !important;
+                height: 637px;
+
+
+                background-image: url("photo-1518655048521-f130df041f66.jpg");
+            }
+
+            .form {
+                border: 4px solid rgba(192, 177, 177, 0.76);
+                height: 450px;
+                width: 500px;
+                margin-top: 0px;
+                margin-left: 160px;
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+                background-color: rgb(212, 228, 241);
+            }
+
+            .con {
+                margin-top: 50px;
+                margin-left: 300px;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            .feed {
+                color: Red;
+            }
+
+            .mess {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .namea {
+                margin-left: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            .fo {
+                margin-top: 25px;
+            }
+
+            .in {
+                width: 390px;
+                color: rgb(158, 4, 4);
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .messa {
+                font-style: oblique;
+                font-weight: bold;
+                color: rgb(8, 121, 8);
+            }
+
+            .sub {
+                width: 390px;
+                margin-left: 40px;
+                padding: 5px;
+                background-color: rgb(71, 242, 248);
+                font-weight: bold;
+                border-radius: 20px;
+                cursor: pointer;
+                border-color: blue;
+            }
+
+            .log {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(231, 228, 228);
+
+            }
+
+            .copy {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(63, 57, 57);
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding-top: 10px;
+            }
+        }
+
+
+
+
+
+
+
+        @media screen and (max-width: 700px) {
+            .list {
+                display: flex;
+                flex-direction: row-reverse;
+                list-style-type: none;
+                position: fixed;
+            }
+
+            .list li {
+                margin-right: 3vw;
+                font-size: 3.6vw;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: blue;
+                cursor: pointer;
+                margin-top: 30px;
+
+            }
+
+            .name {
+
+                display: none;
+
+            }
+
+            #name {
+                margin: 0.5vw !important;
+                display: none;
+                cursor: default;
+
+            }
+
+            .first_name {
+                font-size: 3.7vw !important;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+                color: rgb(0, 47, 255);
+            }
+
+            .container {
+                background-color: rgba(3, 3, 3, 0.856);
+                width: 100vw;
+                height: 650px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+            }
+
+            .content {
+
+                height: 220px;
+                width: 400px;
+
+                padding-top: 200px;
+
+
+                text-align: center;
+
+            }
+
+            .hello {
+                color: red;
+                font-size: 55px;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-weight: bolder;
+            }
+
+            .name1 {
+                font-size: 33px;
+                font-weight: bold;
+                color: rgb(202, 198, 198);
+            }
+
+            .skill1 {
+                font-weight: bold;
+                color: rgba(238, 238, 238, 0.562);
+                padding: 2px !important;
+
+            }
+
+            .button {
+                margin-top: 70px !important;
+                border-bottom-left-radius: 30px;
+                height: 30px;
+                width: 130px;
+                border-top-right-radius: 30px;
+                background-color: rgb(86, 247, 247);
+                border-color: blue;
+                font-size: 18px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(0, 47, 255);
+                padding: 4px;
+                cursor: pointer;
+
+            }
+
+            .about_us {
+                background-color: rgba(3, 3, 3, 0.856);
+                width: 100vw;
+                height: 950px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+            }
+
+            .intro {
+
+                height: 77vh;
+                text-align: center;
+                padding-top: 15vh;
+                padding-left: 7vw;
+                padding-right: 7vw;
+
+            }
+
+            .heading {
+                text-align: center;
+                font-size: 2.3rem;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: red;
+            }
+
+            .content2 {
+                padding: 0.7rem;
+                font-size: 1.5rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: rgb(245, 249, 253);
+            }
+
+            .cv {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+                margin-top: 10vh;
+            }
+
+            .resume {
+                background-color: rgb(0, 153, 255);
+                color: white;
+                margin-left: 10px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 8px;
+                cursor: pointer;
+
+            }
+
+            .button1 {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .myskill {
+                background-color: rgba(3, 3, 3, 0.856);
+                width: 100vw;
+                height: 1450px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+            }
+
+            .boxa {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10vh;
+                margin-left: 15vw;
+
+
+            }
+
+            .boxA {
+                border-radius: 10px;
+                height: 350px;
+                width: 290px;
+                background-color: white;
+                color: black;
+            }
+
+            .boxC {
+                border-radius: 10px;
+                height: 350px;
+                width: 290px;
+                margin-top: 10vh;
+
+                background-color: white;
+                color: black;
+            }
+
+            .boxB {
+                border-radius: 10px;
+                height: 350px;
+                width: 290px;
+                margin-top: 10vh;
+
+                background-color: white;
+                color: black;
+            }
+
+            .pro {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 25px;
+                color: rgb(255, 0, 85);
+                font-weight: bold;
+            }
+
+            .con1 {
+                margin-left: 30px;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .con2 {
+                margin-left: 30px;
+                font-size: 15px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .con3 {
+                margin-left: 30px;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: bold;
+
+            }
+
+            .projecta {
+                background-color: rgba(3, 3, 3, 0.856);
+                width: 100vw;
+                height: 950px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+
+            }
+
+            .pro2 {
+
+                text-align: center;
+
+
+            }
+
+            .heada {
+                text-align: center;
+                padding-top: 10vh;
+                font-size: 60px;
+                font-weight: bold;
+                color: rgb(248, 0, 0);
+            }
+
+            .lista {
+                padding: 15px;
+
+            }
+
+            .a {
+                padding: 3px;
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                border: 1px solid rgb(200, 245, 230);
+                ;
+                margin: 6px;
+                background-color: rgb(200, 245, 230);
+                border-radius: 15px;
+
+            }
+
+            .contacta {
+                background-color: rgba(3, 3, 3, 0.856);
+                width: 100vw;
+                height: 1050px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0px !important;
+                padding: 0px;
+                padding-top: 10vh;
+            }
+
+            .form {
+                border: 4px solid rgba(192, 177, 177, 0.76);
+                height: 60vh;
+                width: 90vw;
+                margin-top: 0px;
+                padding-top: 10vh;
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+                background-color: rgb(212, 228, 241);
+                margin-left: 5vw;
+                margin-top: 5vh;
+            }
+
+            .con {
+                padding-top: 10vh;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: white;
+            }
+
+            .feed {
+                color: Red;
+            }
+
+            .mess {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .namea {
+                margin-left: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            .fo {
+                margin-top: 25px;
+            }
+
+            .in {
+                width: 70vw;
+                color: rgb(158, 4, 4);
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .messa {
+                font-style: oblique;
+                font-weight: bold;
+                color: rgb(8, 121, 8);
+            }
+
+            .sub {
+                width: 70vw;
+                margin-left: 40px;
+                padding: 5px;
+                background-color: rgb(71, 242, 248);
+                font-weight: bold;
+                border-radius: 20px;
+                cursor: pointer;
+                border-color: blue;
+            }
+
+            .log {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(231, 228, 228);
+
+            }
+
+            .log {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(231, 228, 228);
+
+            }
+
+            .copy {
+
+                width: 100%;
+                height: 50px;
+                background-color: rgb(63, 57, 57);
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding-top: 10px;
+            }
+
+            .logo {
+                margin-top: 38vh;
+            }
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home" id="home">
+            <header>
+                <nav>
+                    <div class="navbar">
+                        <ul class="list">
+                            <a href="#contact">
+                                <li class="contact">Contact</li>
+                            </a>
+                            <a href="#project">
+                                <li class="project">My Project</li>
+                            </a>
+                            <a href="#skill">
+                                <li class="skil">My Skill</li>
+                            </a>
+                            <a href="#about">
+                                <li class="about">About Us</li>
+                            </a>
+                            <a href="#home">
+                                <li class="home">Home</li>
+                            </a>
+                            <li class="name">
+
+
+                            <li class="first_name" id="name">Amarjeet...</li>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="box">
+                <div class="content">
+                    <div class="hello" id="content"> Hello!</div>
+                    <div class="name1" id="content"> I am Amarjeet Singh,</div>
+                    <div class="skill1" id="content"> (Web Developer, Coder, Robotics)</div>
+                    <button class="button"> Hire me</button>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="about_us" id="about">
+        <div class="intro">
+            <div class="heading">
+                About us...
+            </div>
+            <div class="content2">
+                Hi! Myself Amarjeet Singh. I am pursuing my Undergraduation in Computer Science and Enginnering From
+                Madan Mohan Malviya University of Technology, Gorakhpur. I had completed my High school and Intermediate from Surya International Academy and secured 89.8% and 94.6% in CBSE board respectively.
+                I am innovative and enthsiastic person. I am focused and learning new things excites me. My passion in life is to gain knowledge.
+
+
+            </div>
+            <div class="button1">
+                <button class="cv" onclick="document.location='cv.html'">
+                    Download CV
+                </button>
+                <button class="resume" onclick="document.location='resume.html'">
+                    Download Resume
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="myskill" id="skill">
+        <div class="skill1">
+            <div class="boxa">
+                <div class="heading" id="head">
+                    My Skill
+                </div>
+                <div class="boxA">
+                    <div class="pro">
+                        Programming<br> Language
+                    </div>
+                    <div class="con1">
+                        <ul>
+                            <li> C</li><br>
+                            <li> C#</li><br>
+                            <li> Javascript</li><br>
+                            <li> Python</li><br>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxB">
+                    <div class="pro">
+                        Development<br> Skills
+                    </div>
+                    <div class="con2">
+                        <ul>
+                            <li> HTML5</li><br>
+                            <li> CSS</li><br>
+                            <li> BOOTSTRAP</li><br>
+                            <li> Django</li><br>
+                            <li> MySQL</li><br>
+                            <li> GIT</li><br>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxC">
+                    <div class="pro">
+                        Other<br> Skills
+                    </div>
+                    <div class="con3">
+                        <ul>
+                            <li> Robotics</li><br>
+                            <li> Wondershare Filmora</li><br>
+                            <li> Adobe Photoshop</li><br>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="projecta" id="project">
+        <div class="pro2">
+            <div class="heada">
+                Projects
+            </div>
+            <div class="lista">
+                <ul>
+                    <li class="a">Smart parking system(based on Arduino)</li>
+                    <li class="a">Moving car and Moving cycle(based on C graphics)</li>
+                    <li class="a">Login page(based on HTML , CSS, Javascript , Django)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="contacta" id="contact">
+        <div class="heading">
+            Contact Us..
+        </div>
+        <div class="con">
+            Give Your <span class="feed">Feedback</span> Here
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="mess">
+                    Send me a <span class="messa">message</span>
+                </div>
+                <div class="fo">
+                    <div class="namea">
+                        First Name:<br>
+                        <input type="text" placeholder="Enter Your First Name" class="in">
+                    </div><br>
+                    <div class="namea">
+                        Last Name:<br>
+                        <input type="text" placeholder="Enter Your First Name" class="in">
+                    </div><br>
+                    <div class="namea">
+                        Email Id:<br>
+                        <input type="email" placeholder="Enter Your First Name" class="in">
+                    </div><br>
+                    <div class="namea">
+                        Message:<br>
+                        <textarea name="textarea" rows="5" cols="50" placeholder="Enter Your Message"
+                            class="in"></textarea>
+                    </div><br>
+                    <div>
+                        <input type="submit" value="Send Message" class="sub">
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="logo">
+            <div class="log"></div>
+            <div class="copy"> Copyright&#169: Amarjeet Singh </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
